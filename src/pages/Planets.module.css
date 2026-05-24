@@ -1,0 +1,14 @@
+.page { padding:82px 2rem 3rem; }
+.header { text-align:center;margin-bottom:2.5rem; }
+.header h1 { font-family:'Orbitron',monospace;font-size:2rem;font-weight:700;color:#fff;margin-bottom:.4rem; }
+.header p { color:rgba(160,180,220,.65);font-size:.92rem; }
+.filters { display:flex;gap:.8rem;margin-bottom:2rem;flex-wrap:wrap;align-items:center;background:rgba(255,255,255,.025);border:1px solid rgba(255,255,255,.06);border-radius:12px;padding:.9rem 1.4rem; }
+.filters input,.filters select { background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);border-radius:8px;color:#e0e8ff;padding:8px 13px;font-size:.83rem;outline:none;transition:border-color .2s;font-family:'Exo 2',sans-serif; }
+.search { flex:1;min-width:170px; }
+.filters input:focus,.filters select:focus { border-color:rgba(0,212,255,.5); }
+.filters select option { background:#0d1b2a; }
+.grid { display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:1.5rem; }
+.empty { text-align:center;padding:4rem 2rem;color:rgba(160,180,220,.45);display:flex;flex-direction:column;align-items:center;gap:.5rem; }
+.skelCard { background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:16px;overflow:hidden; }
+.skelImg { height:190px;border-radius:0; }
+@media(max-width:480px){.page{padding:72px 1rem 2rem}}

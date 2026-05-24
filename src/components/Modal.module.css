@@ -1,0 +1,15 @@
+.overlay { position:fixed;inset:0;background:rgba(0,0,0,.87);backdrop-filter:blur(10px);z-index:200;display:flex;align-items:center;justify-content:center;padding:1rem;animation:fi .2s ease; }
+@keyframes fi { from{opacity:0}to{opacity:1} }
+.modal { background:#0c1828;border:1px solid rgba(0,212,255,.18);border-radius:20px;max-width:640px;width:100%;max-height:90vh;overflow-y:auto;position:relative;animation:su .3s ease; }
+@keyframes su { from{transform:translateY(30px);opacity:0}to{transform:translateY(0);opacity:1} }
+.img { width:100%;height:265px;object-fit:cover;border-radius:20px 20px 0 0; }
+.body { padding:1.5rem; }
+.title { font-family:'Orbitron',monospace;font-size:1.35rem;font-weight:700;color:#fff;margin-bottom:.5rem; }
+.meta { display:flex;gap:1.5rem;margin-bottom:1rem;font-size:.82rem;color:rgba(160,180,220,.65);flex-wrap:wrap; }
+.meta strong { color:#00d4ff; }
+.desc { font-size:.88rem;color:rgba(180,200,240,.72);line-height:1.85;margin-bottom:1.4rem; }
+.priceRow { display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem;padding:1rem;background:rgba(0,212,255,.04);border:1px solid rgba(0,212,255,.1);border-radius:10px; }
+.priceLabel { font-size:.82rem;color:rgba(160,180,220,.65); }
+.priceVal { font-family:'Orbitron',monospace;font-size:1.45rem;font-weight:700;color:#00d4ff; }
+.close { position:absolute;top:13px;right:13px;width:36px;height:36px;background:rgba(0,0,0,.55);border:1px solid rgba(255,255,255,.12);border-radius:50%;color:#fff;font-size:1rem;display:flex;align-items:center;justify-content:center;transition:background .2s;z-index:10; }
+.close:hover { background:rgba(220,50,50,.4); }

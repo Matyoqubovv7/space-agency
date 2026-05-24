@@ -1,0 +1,41 @@
+.nav {
+  position: fixed; top: 0; left: 0; right: 0;
+  background: rgba(5,10,24,0.9); backdrop-filter: blur(18px);
+  border-bottom: 1px solid rgba(0,212,255,0.13);
+  z-index: 100; padding: 0 2.5rem; height: 62px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.logo {
+  font-family: 'Orbitron', monospace; font-size: 1rem; font-weight: 900;
+  background: linear-gradient(135deg, #00d4ff, #7c3aed);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+  letter-spacing: 3px; cursor: pointer; user-select: none; white-space: nowrap;
+}
+.links { display: flex; align-items: center; gap: 1.8rem; }
+.link {
+  color: rgba(160,180,220,0.65); font-size: 0.82rem; letter-spacing: 1px;
+  text-transform: uppercase; cursor: pointer; transition: color 0.2s; font-weight: 500;
+  white-space: nowrap;
+}
+.link:hover, .active { color: #00d4ff !important; }
+.registerBtn {
+  padding: 7px 18px; background: linear-gradient(135deg,#00d4ff,#7c3aed);
+  border: none; border-radius: 20px; color: #fff; font-size: 0.78rem;
+  font-weight: 600; letter-spacing: 0.5px; white-space: nowrap; transition: opacity 0.2s;
+}
+.registerBtn:hover { opacity: 0.85; }
+.logoutBtn {
+  padding: 7px 18px; background: transparent;
+  border: 1px solid rgba(255,100,100,0.4); border-radius: 20px;
+  color: rgba(255,140,140,0.8); font-size: 0.78rem; font-weight: 600;
+  transition: all 0.2s; white-space: nowrap;
+}
+.logoutBtn:hover { background: rgba(255,80,80,0.1); border-color: rgba(255,80,80,0.7); }
+@media (max-width: 768px) {
+  .nav { padding: 0 1rem; }
+  .links { gap: 1rem; }
+  .link { font-size: 0.72rem; letter-spacing: 0.5px; }
+}
+@media (max-width: 540px) {
+  .logo { font-size: 0.82rem; letter-spacing: 1px; }
+}
